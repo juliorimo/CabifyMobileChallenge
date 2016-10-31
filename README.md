@@ -5,7 +5,13 @@ In this iOS app a user can pick products from a list and checkout them to get th
 ## Overview
 
 The project makes uses of `CocoaPods (1.1.1)` in order to automate and build the project.
-
+Pods used in this project are:
+    ```zsh
+    pod 'Alamofire', '~> 4.0'
+    pod 'JGProgressHUD', '~> 1.4'
+    pod 'SwiftyJSON', '~> 3.1'
+    ```
+    
 ## Project Setup Instructions
 
 1. Clone the repository:
@@ -21,7 +27,11 @@ The project makes uses of `CocoaPods (1.1.1)` in order to automate and build the
 1. Open `CabifyMobileChallenge.xcworkspace`
 1. Run
 
+## Usability
 
+## Architecture
+
+## 
 
 
 
