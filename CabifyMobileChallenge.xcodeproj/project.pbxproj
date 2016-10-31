@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0AA8826F1EDBA5CB3D94BF51 /* Pods_CabifyMobileChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6517FC909C9E71A1DBB9AAEB /* Pods_CabifyMobileChallengeTests.framework */; };
 		89A79A1C1DC76A5000AE2949 /* ProductListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A79A1B1DC76A5000AE2949 /* ProductListFooterView.swift */; };
-		89A79A1D1DC76A5000AE2949 /* ProductListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A79A1B1DC76A5000AE2949 /* ProductListFooterView.swift */; };
 		89A79A221DC7948900AE2949 /* GetProductsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A79A211DC7948900AE2949 /* GetProductsRequestTests.swift */; };
 		89A79A241DC794E700AE2949 /* GetProductsRequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A79A231DC794E700AE2949 /* GetProductsRequestManagerTests.swift */; };
 		89A79A251DC796C400AE2949 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCF2D71DC601D300142304 /* Product.swift */; };
@@ -588,7 +587,6 @@
 				89CCF2E81DC7455200142304 /* RequestManagerResponse.swift in Sources */,
 				89A79A261DC796D000AE2949 /* ProductListModel.swift in Sources */,
 				89A79A291DC7992400AE2949 /* ProductListViewControllerAccessoryTests.swift in Sources */,
-				89A79A1D1DC76A5000AE2949 /* ProductListFooterView.swift in Sources */,
 				89CCF2E51DC7442D00142304 /* RequestManager.swift in Sources */,
 				89CCF2FE1DC74B0A00142304 /* UIViewControllerExtension.swift in Sources */,
 				89CCF2F81DC748A400142304 /* GetProductsRequestManager.swift in Sources */,

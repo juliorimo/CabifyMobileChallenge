@@ -1,7 +1,7 @@
 class Product: NSObject {
-    var code: String!
-    var name: String!
-    var price: NSNumber!
+    var code: String
+    var name: String
+    var price: NSNumber
     
     init(code: String, name: String, price: NSNumber) {
         self.code = code
