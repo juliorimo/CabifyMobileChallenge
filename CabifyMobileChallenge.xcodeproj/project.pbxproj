@@ -10,11 +10,15 @@
 		0AA8826F1EDBA5CB3D94BF51 /* Pods_CabifyMobileChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6517FC909C9E71A1DBB9AAEB /* Pods_CabifyMobileChallengeTests.framework */; };
 		89A79A1C1DC76A5000AE2949 /* ProductListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A79A1B1DC76A5000AE2949 /* ProductListFooterView.swift */; };
 		89A79A1D1DC76A5000AE2949 /* ProductListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A79A1B1DC76A5000AE2949 /* ProductListFooterView.swift */; };
+		89A79A221DC7948900AE2949 /* GetProductsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A79A211DC7948900AE2949 /* GetProductsRequestTests.swift */; };
+		89A79A241DC794E700AE2949 /* GetProductsRequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A79A231DC794E700AE2949 /* GetProductsRequestManagerTests.swift */; };
+		89A79A251DC796C400AE2949 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCF2D71DC601D300142304 /* Product.swift */; };
+		89A79A261DC796D000AE2949 /* ProductListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCF2D51DC601BB00142304 /* ProductListModel.swift */; };
+		89A79A291DC7992400AE2949 /* ProductListViewControllerAccessoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A79A281DC7992400AE2949 /* ProductListViewControllerAccessoryTests.swift */; };
 		89CCF2A01DC3C68100142304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCF29F1DC3C68100142304 /* AppDelegate.swift */; };
 		89CCF2A51DC3C68100142304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CCF2A31DC3C68100142304 /* Main.storyboard */; };
 		89CCF2A71DC3C68100142304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89CCF2A61DC3C68100142304 /* Assets.xcassets */; };
 		89CCF2AA1DC3C68100142304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CCF2A81DC3C68100142304 /* LaunchScreen.storyboard */; };
-		89CCF2B51DC3C68100142304 /* CabifyMobileChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCF2B41DC3C68100142304 /* CabifyMobileChallengeTests.swift */; };
 		89CCF2C81DC5F3C800142304 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCF2C71DC5F3C800142304 /* Utils.swift */; };
 		89CCF2C91DC5F3C800142304 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCF2C71DC5F3C800142304 /* Utils.swift */; };
 		89CCF2D21DC5F86D00142304 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CCF2D11DC5F86D00142304 /* ProductListViewController.swift */; };
@@ -58,6 +62,9 @@
 		72B7D6E0B03B4824D3FF185B /* Pods-CabifyMobileChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabifyMobileChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CabifyMobileChallengeTests/Pods-CabifyMobileChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FDD3A327A8A87E3732606B6 /* Pods-CabifyMobileChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabifyMobileChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-CabifyMobileChallenge/Pods-CabifyMobileChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		89A79A1B1DC76A5000AE2949 /* ProductListFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListFooterView.swift; sourceTree = "<group>"; };
+		89A79A211DC7948900AE2949 /* GetProductsRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetProductsRequestTests.swift; sourceTree = "<group>"; };
+		89A79A231DC794E700AE2949 /* GetProductsRequestManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetProductsRequestManagerTests.swift; sourceTree = "<group>"; };
+		89A79A281DC7992400AE2949 /* ProductListViewControllerAccessoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewControllerAccessoryTests.swift; sourceTree = "<group>"; };
 		89CCF29C1DC3C68100142304 /* CabifyMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CabifyMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CCF29F1DC3C68100142304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89CCF2A41DC3C68100142304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,7 +72,6 @@
 		89CCF2A91DC3C68100142304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89CCF2AB1DC3C68100142304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89CCF2B01DC3C68100142304 /* CabifyMobileChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabifyMobileChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89CCF2B41DC3C68100142304 /* CabifyMobileChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabifyMobileChallengeTests.swift; sourceTree = "<group>"; };
 		89CCF2B61DC3C68100142304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89CCF2C71DC5F3C800142304 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		89CCF2CA1DC5F40600142304 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -117,6 +123,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		89A79A1E1DC7944F00AE2949 /* Communications */ = {
+			isa = PBXGroup;
+			children = (
+				89A79A201DC7946700AE2949 /* RequestManagers */,
+				89A79A1F1DC7946200AE2949 /* Requests */,
+			);
+			name = Communications;
+			sourceTree = "<group>";
+		};
+		89A79A1F1DC7946200AE2949 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				89A79A211DC7948900AE2949 /* GetProductsRequestTests.swift */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		89A79A201DC7946700AE2949 /* RequestManagers */ = {
+			isa = PBXGroup;
+			children = (
+				89A79A231DC794E700AE2949 /* GetProductsRequestManagerTests.swift */,
+			);
+			name = RequestManagers;
+			sourceTree = "<group>";
+		};
+		89A79A271DC7990A00AE2949 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89A79A281DC7992400AE2949 /* ProductListViewControllerAccessoryTests.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		89CCF2931DC3C68000142304 = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +193,6 @@
 				89CCF2CD1DC5F44E00142304 /* Supporting Files */,
 				89CCF2CC1DC5F44900142304 /* Mocks */,
 				89CCF2CB1DC5F44300142304 /* Tests */,
-				89CCF2B41DC3C68100142304 /* CabifyMobileChallengeTests.swift */,
 			);
 			path = CabifyMobileChallengeTests;
 			sourceTree = "<group>";
@@ -178,7 +216,6 @@
 			isa = PBXGroup;
 			children = (
 				89CCF2C61DC5F38000142304 /* Views */,
-				89CCF2C51DC5F37C00142304 /* Model */,
 				89CCF2C41DC5F37600142304 /* Classes */,
 				89CCF2C31DC5F36100142304 /* Delegate */,
 			);
@@ -207,6 +244,7 @@
 		89CCF2C41DC5F37600142304 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				89CCF2C51DC5F37C00142304 /* Model */,
 				89CCF2DF1DC743A800142304 /* Extensions */,
 				89CCF2DB1DC73F7B00142304 /* Communications */,
 			);
@@ -234,6 +272,8 @@
 		89CCF2CB1DC5F44300142304 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				89A79A271DC7990A00AE2949 /* Views */,
+				89A79A1E1DC7944F00AE2949 /* Communications */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -546,16 +586,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CCF2E81DC7455200142304 /* RequestManagerResponse.swift in Sources */,
+				89A79A261DC796D000AE2949 /* ProductListModel.swift in Sources */,
+				89A79A291DC7992400AE2949 /* ProductListViewControllerAccessoryTests.swift in Sources */,
 				89A79A1D1DC76A5000AE2949 /* ProductListFooterView.swift in Sources */,
 				89CCF2E51DC7442D00142304 /* RequestManager.swift in Sources */,
 				89CCF2FE1DC74B0A00142304 /* UIViewControllerExtension.swift in Sources */,
 				89CCF2F81DC748A400142304 /* GetProductsRequestManager.swift in Sources */,
 				89CCF2ED1DC7468F00142304 /* GetProductsRequest.swift in Sources */,
-				89CCF2B51DC3C68100142304 /* CabifyMobileChallengeTests.swift in Sources */,
 				89CCF2DE1DC740C400142304 /* Request.swift in Sources */,
 				89CCF3011DC758D600142304 /* ProductListViewControllerAccessory.swift in Sources */,
+				89A79A221DC7948900AE2949 /* GetProductsRequestTests.swift in Sources */,
 				89CCF2C91DC5F3C800142304 /* Utils.swift in Sources */,
+				89A79A241DC794E700AE2949 /* GetProductsRequestManagerTests.swift in Sources */,
 				89CCF2E21DC743B800142304 /* NSObjectExtension.swift in Sources */,
+				89A79A251DC796C400AE2949 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

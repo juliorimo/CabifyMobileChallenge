@@ -1,5 +1,4 @@
 class ProductListViewControllerAccessory: NSObject {
-    
     func composeProductList(_ products: [Product]?) -> [ProductListModel] {
         var list:[ProductListModel] = []
         

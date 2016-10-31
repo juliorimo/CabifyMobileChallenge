@@ -5,7 +5,9 @@
 #ifndef Bridging_Header_h
 #define Bridging_Header_h
 
+@import Alamofire;
 @import Foundation;
+@import SwiftyJSON;
 @import UIKit;
 @import XCTest;
 
