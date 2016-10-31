@@ -1,26 +1,139 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h7J-iP-q0b">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Product List View Controller-->
+        <scene sceneID="HjC-Bm-nfQ">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewController" id="eSS-XR-atd" customClass="ProductListViewController" customModule="CabifyMobileChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="vPN-ak-Z97"/>
+                        <viewControllerLayoutGuide type="bottom" id="aSz-Ko-RTQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="UOc-eh-WCI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="UbO-ca-8cS">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductTableViewCell" rowHeight="70" id="Cr5-UI-VGu" customClass="ProductTableViewCell" customModule="CabifyMobileChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="65" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cr5-UI-VGu" id="rSq-IF-Eab">
+                                            <frame key="frameInset" width="375" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CE2-j6-AXC">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unit price: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgw-O9-GAd">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="9Jh-fU-YxJ">
+                                                    <connections>
+                                                        <action selector="stepperActionWithSender:" destination="Cr5-UI-VGu" eventType="valueChanged" id="NM0-Ri-upc"/>
+                                                    </connections>
+                                                </stepper>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cgw-O9-GAd" firstAttribute="top" secondItem="CE2-j6-AXC" secondAttribute="bottom" constant="1" id="47L-j8-wL8"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Jh-fU-YxJ" secondAttribute="trailing" constant="13" id="C8N-3M-Go9"/>
+                                                <constraint firstItem="9Jh-fU-YxJ" firstAttribute="centerY" secondItem="rSq-IF-Eab" secondAttribute="centerY" id="IOA-9j-uMR"/>
+                                                <constraint firstItem="CE2-j6-AXC" firstAttribute="top" secondItem="rSq-IF-Eab" secondAttribute="top" constant="10" id="KZk-AK-ZOR"/>
+                                                <constraint firstItem="9Jh-fU-YxJ" firstAttribute="leading" secondItem="CE2-j6-AXC" secondAttribute="trailing" constant="8" id="Lvk-wN-l2v"/>
+                                                <constraint firstItem="cgw-O9-GAd" firstAttribute="leading" secondItem="rSq-IF-Eab" secondAttribute="leading" constant="8" id="N7B-0q-ALy"/>
+                                                <constraint firstItem="CE2-j6-AXC" firstAttribute="leading" secondItem="rSq-IF-Eab" secondAttribute="leading" constant="8" id="cM2-hZ-rym"/>
+                                                <constraint firstItem="9Jh-fU-YxJ" firstAttribute="leading" secondItem="cgw-O9-GAd" secondAttribute="trailing" constant="8" id="v6N-7o-skm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="CE2-j6-AXC" id="Fb1-J7-u7m"/>
+                                            <outlet property="priceLabel" destination="cgw-O9-GAd" id="cG7-vD-6VV"/>
+                                            <outlet property="stepper" destination="9Jh-fU-YxJ" id="UwL-WN-rSa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="eSS-XR-atd" id="rg0-fj-2ax"/>
+                                    <outlet property="delegate" destination="eSS-XR-atd" id="k6W-qF-7m9"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3c-em-Kk0" customClass="ProductListFooterView" customModule="CabifyMobileChallenge" customModuleProvider="target">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zow-Wl-rHG">
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vsQ-hR-yIC">
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vsQ-hR-yIC" firstAttribute="top" secondItem="C3c-em-Kk0" secondAttribute="top" constant="20" id="56p-PU-7ZI"/>
+                                    <constraint firstItem="zow-Wl-rHG" firstAttribute="top" secondItem="C3c-em-Kk0" secondAttribute="top" constant="20" id="5eq-of-iBd"/>
+                                    <constraint firstAttribute="trailing" secondItem="vsQ-hR-yIC" secondAttribute="trailing" constant="8" id="EIw-cp-wnA"/>
+                                    <constraint firstAttribute="bottom" secondItem="zow-Wl-rHG" secondAttribute="bottom" constant="20" id="Wdx-IW-6F5"/>
+                                    <constraint firstItem="vsQ-hR-yIC" firstAttribute="leading" secondItem="zow-Wl-rHG" secondAttribute="trailing" constant="18" id="dcy-c7-FJ2"/>
+                                    <constraint firstItem="zow-Wl-rHG" firstAttribute="leading" secondItem="C3c-em-Kk0" secondAttribute="leading" constant="8" id="fLy-cP-BmZ"/>
+                                    <constraint firstItem="vsQ-hR-yIC" firstAttribute="width" secondItem="zow-Wl-rHG" secondAttribute="width" id="oVd-6q-XVR"/>
+                                    <constraint firstAttribute="bottom" secondItem="vsQ-hR-yIC" secondAttribute="bottom" constant="20" id="xKu-Vu-NvD"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="amountLabel" destination="vsQ-hR-yIC" id="UOO-XO-31M"/>
+                                    <outlet property="totalLabel" destination="zow-Wl-rHG" id="dgP-RZ-HwF"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C3c-em-Kk0" firstAttribute="leading" secondItem="UOc-eh-WCI" secondAttribute="leading" id="4hZ-Av-QPP"/>
+                            <constraint firstItem="UbO-ca-8cS" firstAttribute="top" secondItem="UOc-eh-WCI" secondAttribute="top" id="Eyh-x2-mKZ"/>
+                            <constraint firstAttribute="trailing" secondItem="UbO-ca-8cS" secondAttribute="trailing" id="FQK-Md-qEB"/>
+                            <constraint firstItem="aSz-Ko-RTQ" firstAttribute="top" secondItem="C3c-em-Kk0" secondAttribute="bottom" id="T8H-3d-Cfw"/>
+                            <constraint firstItem="UbO-ca-8cS" firstAttribute="leading" secondItem="UOc-eh-WCI" secondAttribute="leading" id="TPg-fX-M0G"/>
+                            <constraint firstItem="C3c-em-Kk0" firstAttribute="top" secondItem="UbO-ca-8cS" secondAttribute="bottom" id="Z8V-DW-Hvx"/>
+                            <constraint firstAttribute="trailing" secondItem="C3c-em-Kk0" secondAttribute="trailing" id="ckl-Lh-wmQ"/>
+                            <constraint firstItem="UbO-ca-8cS" firstAttribute="top" secondItem="vPN-ak-Z97" secondAttribute="bottom" constant="-64" id="pRg-DG-c2Q"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="RHz-bJ-bZI"/>
+                    <connections>
+                        <outlet property="footerView" destination="C3c-em-Kk0" id="2Z0-gV-VGt"/>
+                        <outlet property="tableView" destination="UbO-ca-8cS" id="DMq-fq-Kh2"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQa-Ir-4XY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1146.4000000000001" y="1244.527736131934"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZWD-c9-SYL">
+            <objects>
+                <navigationController id="h7J-iP-q0b" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g4C-or-Upf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eSS-XR-atd" kind="relationship" relationship="rootViewController" id="0mm-zk-mqU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEb-qU-iFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2030" y="1245"/>
         </scene>
     </scenes>
 </document>

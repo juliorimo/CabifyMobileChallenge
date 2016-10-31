@@ -1,0 +1,11 @@
+"PRODUCT_LIST_TITLE" = "Products";
+"PRODUCT_LIST_RELOAD_BUTTON" = "Reload";
+"PRODUCT_LIST_CLEAR_BUTTON" = "Clear";
+
+"PRODUCT_LIST_CELL_NAME" = "%@ (x %@)";
+"PRODUCT_LIST_CELL_UNIT_PRICE" = "Unit price: %@";
+
+"PRODUCT_FOOTER_TOTAL_TEXT" = "Total:";
+
+"ALERT_ERROR_LOADING_PRODUCTS" = "Error loading products. Try again later";
+

@@ -1,3 +1,18 @@
-PODFILE CHECKSUM: 42afba107d517006fab0f7cf153593b6df46c436
+PODS:
+  - Alamofire (4.0.1)
+  - JGProgressHUD (1.4)
+  - SwiftyJSON (3.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - JGProgressHUD (~> 1.4)
+  - SwiftyJSON (~> 3.1)
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  JGProgressHUD: 1617b0940cf80bb53e8f7d6f0fd69252ea45d6d4
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+
+PODFILE CHECKSUM: 28c04a446146b718dfaca51903049f389907925c
 
 COCOAPODS: 1.1.1
