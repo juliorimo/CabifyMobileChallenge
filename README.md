@@ -6,7 +6,7 @@ In this iOS app a user can pick products from a list and checkout them to get th
 
 The project makes uses of `CocoaPods (1.1.1)` in order to automate and build the project.
 Pods used in this project are:
-    ```zsh
+    ```
     pod 'Alamofire', '~> 4.0'
     pod 'JGProgressHUD', '~> 1.4'
     pod 'SwiftyJSON', '~> 3.1'
